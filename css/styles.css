@@ -722,3 +722,18 @@ address {
   text-decoration-skip-ink: none;
   color: #4d5ae5;
 }
+
+.modal-privacy-text {
+  display: flex;
+  align-items: center;
+}
+
+.modal-check:checked + .modal-privacy-text span {
+  fill: #404bbf;
+  border: 1px solid #404bbf;
+}
+
+.icon-check-border {
+  fill: ;
+  margin-right: 8px;
+}

@@ -513,10 +513,19 @@
             class="modal-comment"
           ></textarea>
         </form>
-        <p class="modal-privacy-text">
-          I accept the terms and conditions of the
-          <a href="" class="modal-privacy">Privacy Policy</a>
-        </p>
+        <input type="checkbox" name="modal-check" id="modal-check" />
+        <label for="modal-check" class="modal-privacy-text"
+          ><span>
+            <svg class="icon-check-border" width="16" height="16">
+              <use href="./images/icons.svg#icon-check-border"></use>
+              <svg>
+                <use href=""></use>
+              </svg>
+            </svg> </span
+          >I accept the terms and conditions of the
+          <a href="" class="modal-privacy">Privacy Policy</a></label
+        >
+
         <button type="submit" class="modal-btn">Send</button>
       </div>
     </div>
