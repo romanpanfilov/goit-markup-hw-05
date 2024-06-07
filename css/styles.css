@@ -858,12 +858,6 @@ address {
   text-align: center;
 }
 
-.icon-checkbox {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .modal-privacy {
   font-weight: 400;
   font-size: 12px;
@@ -890,6 +884,9 @@ address {
 }
 
 .modal-privacy-text span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   border-radius: 2px;
