@@ -661,6 +661,12 @@ address {
   pointer-events: none;
 }
 
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .modal {
   border-radius: 4px;
   width: 408px;
