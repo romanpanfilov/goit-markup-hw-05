@@ -564,19 +564,22 @@
               class="modal-comment"
             ></textarea>
           </div>
-          <input
-            type="checkbox"
-            name="modal-check"
-            id="modal-check"
-            class="modal-check visually-hidden"
-          />
-          <label for="modal-check" class="modal-privacy-text"
-            ><span>
-              <svg width="10" height="8">
-                <use href="./images/icons.svg#icon-Vector"></use></svg></span
-            >I accept the terms and conditions of the
-            <a href="" class="modal-privacy">Privacy Policy</a></label
-          >
+          <div class="checkbox-wrap">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              class="modal-check visually-hidden"
+              value="true"
+            />
+            <label for="user-privacy" class="modal-privacy-text"
+              ><span>
+                <svg width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use></svg></span
+              >I accept the terms and conditions of the
+            </label>
+            <a href="" class="modal-privacy">Privacy Policy</a>
+          </div>
 
           <button type="submit" class="modal-btn">Send</button>
         </form>
