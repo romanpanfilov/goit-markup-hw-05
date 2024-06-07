@@ -870,8 +870,6 @@ address {
 }
 
 .modal-privacy-text {
-  display: flex;
-  align-items: center;
 }
 
 .modal-check {
