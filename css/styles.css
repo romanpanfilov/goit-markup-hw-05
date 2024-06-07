@@ -687,16 +687,17 @@ address {
 
 .modal-close {
   position: relative;
+  display: block;
   background-color: transparent;
   border-radius: 100%;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
   width: 24px;
   height: 24px;
   border: none;
   margin-left: 332px;
   margin-bottom: 24px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-svg {
@@ -705,10 +706,7 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.modal-close .modal-close-svg:hover {
-  fill: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-background {
@@ -720,11 +718,20 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close .modal-close-background:hover {
-  fill: #404bbf;
+.modal-close:hover {
   border: none;
+}
+
+.modal-close:hover .modal-close-background {
+  fill: #4d5ae5;
+  border: none;
+}
+
+.modal-close:hover .modal-close-svg {
+  fill: #ffffff;
 }
 
 .modal-title {
@@ -853,6 +860,7 @@ address {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+  margin-left: 4px;
 }
 
 .modal-privacy-text {
