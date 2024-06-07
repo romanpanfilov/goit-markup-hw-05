@@ -742,7 +742,7 @@ address {
   display: block;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
@@ -858,6 +858,12 @@ address {
   text-align: center;
 }
 
+.icon-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal-privacy {
   font-weight: 400;
   font-size: 12px;
@@ -879,8 +885,8 @@ address {
 
 .modal-check:checked + .modal-privacy-text span {
   background-color: #404bbf;
-  border: 1px solid #404bbf;
-  fill: #ffffff;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .modal-privacy-text span {
